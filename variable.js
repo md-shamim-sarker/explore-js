@@ -1,31 +1,38 @@
-// var x = 10;
-// console.log(x);
-// var y = 3;
-// console.log(x + y);
-// console.log(x - y)
-// console.log(x * y);
-// console.log(x / y);
-// console.log(x % y);
-// console.log(typeof x);
+/*
+Variable declaration:
+---------------------
+var/let/const variableName;
 
-// var z = "5";
-// console.log(typeof z);
-// console.log(parseInt(z));
+Variable assignation:
+---------------------
+variableName = value;
 
-// var a = 5.2;
-// console.log(typeof z);
+Both declaration & assignation:
+-------------------------------
+var/let/const variableName = value;
+*/
 
-// var b = "5.5";
-// console.log(parseInt(b));
-// console.log(parseFloat(b));
+/*
+Variable Naming Convention:
+--------------------------
+1. No JavaScript keywords (var, let, const)
+2. No space (my variable name)
+3. No quotation mark ("variable")
+4. No start with number (10variable)
+5. Number is end is allowed (variable10)
+6. No hyphen or dash (my-variable-name)
+7. Snakecase is allowed but not recommended (my_variable_name)
+8. Camelcase is allowed and recommended (myVariableName)
+9. Pascalcase is allowed but not recommended (MyVariableName)
+10. JS variable is case sensitive (MYVARIABLE != myvariable)
+*/
 
-// console.log(a);
-// console.log("Sneha Mony");
+var myFistName = "Shamim";
+var myLastName = "Sarker";
+var myFullName = myFistName + " " + myLastName;
+console.log(myFullName);
 
-// var p = 0.1;
-// var q = 0.2;
-// var total = p + q;
-// total = total.toFixed(1);
-// total = parseFloat(total);
-// console.log(total);
-// console.log(typeof total);
+var myFistName = "Sneha";
+var myLastName = " Mony";
+var myFullName = myFistName + myLastName;
+console.log(myFullName);
