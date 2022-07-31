@@ -21,8 +21,18 @@ console.log(division);
 var modulus = x % y;
 console.log(modulus);
 
+// Concatenation of string
+var firstName = "Sneha";
+var lastName = "Mony";
+var fullName = firstName + " " + lastName;
+console.log(fullName);
+
 /*
 Here,
 x & y are called operand
 +, -, *, /, % are called operator
 */
+
+// NB: typeof is a operator
+
+console.log(typeof x);
