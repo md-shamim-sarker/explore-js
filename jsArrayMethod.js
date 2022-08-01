@@ -1,3 +1,4 @@
+/*
 const fruits = ["Banana", "Orange", "Apple", "Mango"];
 console.log(fruits);
 console.log(fruits.toString());
@@ -21,11 +22,45 @@ const girls = ["Marry", "Pritilata", "Rokeya"];
 const pets = ["Tomi", "Pussy", "Mahesh"];
 const all = boys.concat(girls, pets);
 console.log(all);
-
+*/
 
 
 /*
 The splice() method adds new items to an array.
 The slice() method slices out a piece of an array.
-https://www.w3schools.com/js/js_array_methods.asp
+The slice() method creates a new array.
+The slice() method does not remove any elements from the source array.
 */
+
+const fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+// console.log(fruits);
+var fruits2 = fruits.slice(3, 4);
+// console.log(fruits2);
+
+fruits.splice(2, 0, "Jackfruit", "Kiwi");
+fruits.splice(3, 1);
+console.log(fruits);
+
+console.log(fruits.toString());
+
+console.log(fruits);
+
+fruits.sort();
+console.log(fruits);
+
+fruits.reverse();
+console.log(fruits);
+
+const points = [40, 100, 1, 5, 25, 10];
+// console.log(points.sort()); // Wrong way
+
+var myFunction = function (a, b) {
+    //return a - b; // Ascending Order
+    // return b - a; // Descending Order
+    return 0.5 - Math.random();
+}
+
+console.log(points.sort(myFunction));
+
+console.log(Math.max(2, 4, 6, 8));
+console.log(Math.min(2, 4, 6, 8));
